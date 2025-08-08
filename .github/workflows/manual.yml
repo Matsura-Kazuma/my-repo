@@ -6,11 +6,16 @@ on:
       #入力パラメータ名
       greeting:
         # データ型(文字列)
-        type: string
-        # 入力パラメータのデフォルト値
-        default: Hello
+        # type: string
+        # # 入力パラメータのデフォルト値
+        type: choice
+        options:
+          - info
+          - warn
+          - error
+        default: info
         # 入力パラメータの必須フラグ
-        requireing: true
+        required: true
         # 入力パラメータの概要
         description: A cheerful workflow_dispatch
 
